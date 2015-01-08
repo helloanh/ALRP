@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>
+    Share - El Salvador
+  </title>
+  <style type="text/css" media="screen">
+  @import url(<?php bloginfo('template_url'); ?>/style.css);
+  </style>
+</head>
+<body>
+<div id="container">
+<div id="wrapper">
+<div id="page">
+
+<div id="header">
+  <div id="header-top">
+    <div id="header-padder">
+      <div id="header-logo"><div class="padder-20">
+        <img src="<?php bloginfo('template_url'); ?>/images/logo.gif">
+      </div>
+    </div>
+    <div id="header-search">
+      <div id="header-links">
+        <div class="padder-top-10 padder-bottom-10">
+           Home | Contact Us | En Espanol
+           <img src="<?php bloginfo('template_url'); ?>/images/rss.gif"><img src="<?php bloginfo('template_url'); ?>/images/facebook.gif"><img src="<?php bloginfo('template_url'); ?>/images/twitter.gif"><img src="<?php bloginfo('template_url'); ?>/images/youtube.gif"><img src="<?php bloginfo('template_url'); ?>/images/blog.gif">
+        </div>
+      </div>
+      <div id="header-search-box">
+        <div class="padder-10">
+          <div class="padder-20">this is a search Box</div>
+        </div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<!-- end of header -->
+<div id="left-fade"></div>
+<div id="content">
+<!-- start of menu -->
+  <div id="menu-container">
+    <div id="menu-cheat">
+      <ul>
+        <li class="page-item">
+          <a href="dogs">dogs</a>
+          <ul>
+            <li><a href="hurf">kibble</a></li>
+            <li><a href="hurf">bones</a></li>
+         </ul>
+        </li>
+        <li class="page-item menu-left-border">
+          <a href="cats">cats</a>
+          <ul>
+            <li><a href="hurf">mice</a></li>
+            <li><a href="hurf">milk</a></li>
+         </ul>  
+        </li>
+        <li class="page-item menu-left-border">
+          <a href="cats">Fish</a>
+          <ul>
+            <li><a href="hurf">water</a></li>
+            <li><a href="hurf">bubbles</a></li>
+            <li><a href="hurf">totally rad underwater castles</a></li>
+         </ul>  
+        </li>
+      </ul>
+    </div>
+    <div class="menu-cheat2">
+      Menu.
+    </div>
+    <div class="menu-cheat2">
+      Menu?
+    </div>
+    <div class="menu-cheat2">
+      Menu!  
+    </div>
+  </div>

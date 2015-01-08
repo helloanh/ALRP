@@ -1,0 +1,8 @@
+#header-right, #menu-container, #featured-top, #buttons, #inner-bar {
+display:none;
+}
+
+#inner-left{
+width: 870px;
+}
+

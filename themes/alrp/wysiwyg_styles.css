@@ -1,0 +1,45 @@
+body{
+font:16px "museo-sans-1","museo-sans-2", sans-serif;
+color: #444242;
+}
+
+body img {
+  border:0px;
+}
+
+h1{
+line-height: ;
+font:20px/1.5em "museo-sans-1","museo-sans-2", sans-serif;
+padding: 0px 0px 5px;
+}
+
+h2{
+line-height: ;
+font:18px/1.5em "museo-sans-1","museo-sans-2", sans-serif;
+padding: 0px 0px 5px;
+}
+
+h3{
+line-height: ;
+font:16px/1.5em "museo-sans-1","museo-sans-2", sans-serif;
+padding: 0px 0px 5px;
+}
+
+p, li, td{
+  font:14px/1.5em "museo-sans-1","museo-sans-2", sans-serif;
+}
+
+a {
+color:#B52C1A;
+text-decoration: none;
+font-weight: bold;
+text-decoration: none;
+}
+a:hover {
+text-decoration: underline;
+}
+
+a img{
+border:none;
+text-decoration: none;
+}
