@@ -1,14 +1,38 @@
 /*
- * Theme Name: ALRP
+ * Theme Name: ALRP_SASS
  * Theme URI: http://radicaldesigns.org 
  * Description: template for ALRP
  * Version: 1.0
  *
- * Author: Suzi
+ * Author: Anh
  * Author URI: http://radicaldesigns.org 
  *
- * */
+*/
 
+
+/* main sass and compass setup */
+@import "compass";
+@import "compass/reset";
+
+/*base components */
+
+/* theme colors */
+$mainred: #bc2e22;
+$lightgray: #686566;
+$beigeblue: #a8c2c1;
+
+/* base variables */
+$base-font-family: 'museo-sans-1','museo-sans-2', sans-serif;
+
+
+
+/* mixins, or sniplets of code to call as function */
+
+
+
+
+
+/******************** IMPORTED LEGACY CODE ********************/
 .drop-shadow{
      -moz-box-shadow: 0px 0px 4px #ccc; /* FF3.5+ */
   -webkit-box-shadow: 0px 0px 4px #ccc; /* Saf3.0+, Chrome */
@@ -17,11 +41,8 @@ behavior: url('http://alrp-new.live.radicaldesigns.org/wp-content/themes/alrp/PI
 }
 
 
-
-
 /* --GLOBAL-- */
-*{font-family: 'museo-sans-1','museo-sans-2', sans-serif;}
-
+*{font-family: $base-font-family;}
 
 body {
   margin:0;
@@ -37,8 +58,7 @@ body img {
 }
 
 h1.pagetitle, h2.pagetitle, h3.pagetitle{
-line-height: ;
-font-size:16px
+font-size:16px;
 line-height: 1.5em;
 padding: 5px 15px;
 }
@@ -99,7 +119,6 @@ font-family: "museo-sans-1","museo-sans-2";
 
 input {
 vertical-align: top;
-background-color: ;
 font-size: 12px;
 padding: 0px;
 }
@@ -264,7 +283,6 @@ height: auto;
 }
 
 #menu-container ul ul a {
-	background: ;
 	line-height: 1em;
 	padding: 5px;
 	width: 10em;
@@ -276,7 +294,6 @@ height: auto;
 	font-weight:600;
 }
 #menu-container ul ul a:hover {
-	background: ;
 }
 #menu-container ul li:hover > ul {
 	display: block;
@@ -300,7 +317,6 @@ height: auto;
   width: 960px;
   margin: 0 auto;
   margin-bottom:40;
-  color: ;
   font-size:12px;
   text-align: left;
   background:  url(images/inside-bg.gif) repeat-y #fff;
@@ -350,7 +366,6 @@ font-size: 20px;
 
 #radslide-nav {
 height:35px;
-background: ;
 position: absolute;
 top:35px;
 right: 220px;
@@ -443,7 +458,6 @@ float:right;
 
 #spotlight-img img{
 margin: 0 0px 10px 10px;
-background-color: ;
 border: 1px solid #F1F5E7;
 padding: 5px;
    -moz-box-shadow: 2px 2px 3px #ececec; /* FF3.5+ */
@@ -452,7 +466,7 @@ padding: 5px;
 }
 
 #inner-left #spotlight-img{
-margin-top: 15px;
+  margin-top: 15px;
 }
 
 
@@ -462,7 +476,6 @@ float:left;
 
 .gallery-img img{
 margin: 0 10px 10px 0px;
-background-color: ;
 border: 1px solid #F1F5E7;
 padding: 5px;
    -moz-box-shadow: 2px 2px 3px #ececec; /* FF3.5+ */
@@ -477,7 +490,6 @@ margin-top: 15px;
 
 /* -- INSIDE PAGE **/
 #inner {
-background: ;
 float:left;
 text-align: left;
 width:960px;
@@ -495,7 +507,6 @@ margin-left: 45px;
 }
 
 #inner .padder-20{
-margin: ;
 padding: 40px 20px 20px;
 overflow: hidden;
 }
@@ -537,7 +548,6 @@ color: #fff;
 
 
 #sub-page-menu .page_item a{
-color: ;
 font-size: 14px;
 font-weight: normal;
 }
@@ -547,7 +557,6 @@ font-weight: bold;
 }
 
 #sub-page-menu .current_page_item ul li a{
-color: ;
 font-weight: normal;
 }
 
@@ -750,7 +759,7 @@ color:#fff;
 font-size:11px;
 width:960px;
 background-color: rgba(0, 0, 0, 0.8);  /* FF3+, Saf3+, Opera 10.10+, Chrome, IE9 */
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6�IE9 */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); /* IE6 and IE9 */
 zoom: 1;
 font-weight: bold;
 top: 210px;
