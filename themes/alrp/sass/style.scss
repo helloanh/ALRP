@@ -6,28 +6,24 @@
  *
  * Author: Suzi, Anh
  * Author URI: http://radicaldesigns.org 
- * Description: ALRP with SASS
+ * Description: ALRP theme with sass and compass following the desktop-first responsive design strategy.
  *
 */
+
 
 
 /* main sass and compass setup */
 @import "compass";
 @import "compass/reset";
 
-/*base components */
+/*import partials for base styles */
+@import "_partials/colors";
+@import "_partials/mixins";
+@import "_partials/typography";
+@import "_partials/vendors";
 
-/* theme colors */
-$mainred: #bc2e22;
-$lightgray: #686566;
-$beigeblue: #a8c2c1;
-
-/* base variables */
 $base-font-family: 'museo-sans-1','museo-sans-2', sans-serif;
 $base-font-size: 14px;
-
-/* mixins, or sniplets of code to call as function */
-
 
 
 /******************** IMPORTED LEGACY CODE ********************/
@@ -217,40 +213,26 @@ color: #b52d21;
 	height: 35px;
 	font-weight: 500;
 	width: 680px;
+
+        ul { list-style:none; }
+        li { float: left;
+             position: relative;
+        }
+        a, span.top-page_item {
+          display:block;
+          padding: 0;
+          text-decoration: none;
+          color: $lightgray;
+          font-size: 15px;
+          text-align: left;
+          margin: 0px 10px;
+          height: 30px;
+          vertical-align: middle;  
+        }
 }
 
 #menu-container *{
 cursor: pointer;
-}
-
-#menu-container span.top-page_item{
-
-}
-
-#menu-container #menu-list{
-}
-
-#menu-container ul {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
-
-#menu-container li {
-	float: left;
-	position: relative;
-}
-
-#menu-container a, #menu-container span.top-page_item {
-	display: block;
-	padding: 0;
-	text-decoration: none;
-  color: #686566;
-  font-size: 15px;
-  text-align: left;
-  margin: 0px 10px;
-	height: 30px;
-	vertical-align: middle; 
 }
 
 #menu-container ul ul a{height: auto;}
@@ -1094,3 +1076,52 @@ width: 200px;
 q:before, q:after {
 	content:"";
 }
+
+/* MEDIA QUERIES  */
+/* Desktops */
+
+@media only screen and (max-width : 1824px) {
+  #content {
+    width: 645px;
+  }
+
+  #footer {
+    width: 645px;
+    margin: 0 auto;
+    margin-bottom:40;
+    font-size:12px;
+    text-align: left;
+  }
+
+ 
+  
+  #header-links {
+      height: 30px;
+      text-align:right;  
+      margin-right:10px;
+    
+      a { font-weight: normal;
+          color: #444242;
+          font-size: 12px;
+        }
+    }
+}
+
+/* First custom break point at 770px, good for small devices and tablets  */
+@media only screen and (max-width: 770px) {
+    .drop-shadow { width: 645px; }
+  
+    #header-links {
+      display: none;
+    }
+
+    
+}
+
+/* Second custom break at 400px */
+@media only screen and (max-width: 400px) {
+    #header-links {
+      display: none;
+    }
+}
+
