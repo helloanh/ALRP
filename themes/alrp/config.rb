@@ -10,4 +10,6 @@ output_style = :nested
 # To enable relative paths to assets via compass helper functions.
 # note: this is important in wordpress themes for sprites
 
+require 'bootstrap-sass'
+
 

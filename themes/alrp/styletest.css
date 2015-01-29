@@ -1,0 +1,60 @@
+/*
+Error: Invalid CSS after "...kground-color: ": expected expression (e.g. 1px, bold), was ";"
+        on line 830 of /home/alrptest/public_html/blog/wp-content/themes/alrp/sass/styletest.scss
+
+825:     margin: 0;
+826:     padding: 0 4px 5px;
+827: }
+828: 
+829: #inner-left img{
+830:     background-color: ;
+831:     border: 1px solid #F1F5E7;
+832:     padding: 5px;
+833:      -moz-box-shadow: 2px 2px 3px #ececec; /* FF3.5+ *\/
+834:   -webkit-box-shadow: 2px 2px 3px #ececec; /* Saf3.0+, Chrome *\/
+835:           box-shadow: 2px 2px 3px #ececec; /* Opera 10.5, IE9, Chrome 10+ *\/
+
+Backtrace:
+/home/alrptest/public_html/blog/wp-content/themes/alrp/sass/styletest.scss:830
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:1165:in `expected'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/script/lexer.rb:220:in `expected!'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/script/parser.rb:572:in `assert_expr'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/script/parser.rb:62:in `parse'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:1025:in `sass_script'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:878:in `value!'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:753:in `block in try_declaration'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:1139:in `call'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:1139:in `rethrow'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:766:in `try_declaration'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:696:in `declaration_or_ruleset'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:661:in `block_child'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:650:in `block_contents'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:642:in `block'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:636:in `ruleset'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:660:in `block_child'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:653:in `block_contents'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:117:in `stylesheet'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/scss/parser.rb:42:in `parse'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/engine.rb:393:in `_to_tree'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/engine.rb:268:in `render'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:486:in `update_stylesheet'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `each'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/usr/local/lib/ruby/gems/1.9/gems/sass-3.4.0/lib/sass/plugin/compiler.rb:291:in `watch'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/bin/compass:44:in `call'
+/usr/local/lib/ruby/gems/1.9/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/usr/local/bin/compass:23:in `load'
+/usr/local/bin/compass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...kground-color: \": expected expression (e.g. 1px, bold), was \";\"\A         on line 830 of /home/alrptest/public_html/blog/wp-content/themes/alrp/sass/styletest.scss\A \A 825:     margin: 0;\A 826:     padding: 0 4px 5px;\A 827: }\A 828: \A 829: #inner-left img{\A 830:     background-color: ;\A 831:     border: 1px solid #F1F5E7;\A 832:     padding: 5px;\A 833:      -moz-box-shadow: 2px 2px 3px #ececec; /* FF3.5+ */\A 834:   -webkit-box-shadow: 2px 2px 3px #ececec; /* Saf3.0+, Chrome */\A 835:           box-shadow: 2px 2px 3px #ececec; /* Opera 10.5, IE9, Chrome 10+ */"; }
