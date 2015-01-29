@@ -106,7 +106,7 @@ clear: both;
 }
 
 #page {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -122,8 +122,7 @@ clear: both;
 }
 
 #header-top {
-  width:960px;
-}
+  }
 
 #header-padder {
   padding-top:40px;
@@ -135,9 +134,7 @@ clear: both;
 }
 
 #header-right {
-  width: 700px;
-  float:left;
-  height: 160px;
+
 }
 
 #header-right-padder{
@@ -1049,34 +1046,3 @@ width: 200px;
 q:before, q:after {
         content:"";
 }
-
-/* MEDIA QUERIES  */
-/* Desktops */
-
-@media only screen and (max-width : 1824px) {
-  #content {
-    width: 645px;
-  }
-
-  #footer {
-    width: 645px;
-    margin: 0 auto;
-    margin-bottom:40;
-    font-size:12px;
-    text-align: left;
-  }
-
- 
-  
-  #header-links {
-      height: 30px;
-      text-align:right;  
-      margin-right:10px;
-    
-      a { font-weight: normal;
-          color: #444242;
-          font-size: 12px;
-        }
-    }
-}
-
