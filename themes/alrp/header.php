@@ -53,10 +53,10 @@
 
 <div id="header">
   <div id="header-top">
-    <div id="header-logo" class="col-md-4">
+    <div id="header-logo" class="col-xs-4">
       <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.gif"></a>
     </div>
-    <div id="header-right" class="col-md-8"><div id="header-right-padder">
+    <div id="header-right" class="col-xs-8"><div id="header-right-padder">
       <div id="header-links">
          <a href="/">home /</a>
          <a href="/about/contact">contact us /</a>
