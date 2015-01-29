@@ -8361,3 +8361,6 @@ button.close {
   /* line 18, ../../../../../../../usr/local/lib/ruby/gems/1.9/gems/bootstrap-sass-3.3.3/assets/stylesheets/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
+/* line 32, sass/style.scss */
+#header-logo.col-xs-4 {
+  padding-left: 0; }
