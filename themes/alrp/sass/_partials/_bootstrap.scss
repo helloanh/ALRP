@@ -9,7 +9,7 @@
 
 // Core CSS
 @import "bootstrap/scaffolding";
-@import "bootstrap/type";
+//@import "bootstrap/type";
 @import "bootstrap/code";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
@@ -39,8 +39,8 @@
 @import "bootstrap/wells";
 @import "bootstrap/close";
 
- Components w/ JavaScript
-@import "../../js/javascripts/bootstrap/modals";
+// Components w/ JavaScript
+@import "bootstrap/modals";
 @import "../../js/javascripts/bootstrap/tooltip";
 @import "../../js/javascripts/bootstrap/popovers";
 @import "../../js/javascripts/bootstrap/carousel";

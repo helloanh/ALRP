@@ -17,21 +17,23 @@
 /*import partials for base styles */
 @import "_partials/colors";
 @import "_partials/mixins";
-@import "_partials/typography";
-@import "_partials/vendors";
+//@import "_partials/typography";
+//@import "_partials/vendors";
 
 /* define variables */
 $base-font-family: 'museo-sans-1','museo-sans-2', sans-serif;
 $base-font-size: 14px;
 
-/* legacy code from static ALRP site */
-@import "_partials/legacy";
-
 /* twitter bootstrap from gem, look in alrp/config.ru file */
 @import "bootstrap";
+
+/* legacy code from static ALRP site */
+@import "_partials/legacy";
 
 /* Overriding Bootstrap */
 #header-logo.col-xs-4 {
 	padding-left: 0;
 }
+
+/* Overriding fonts temporarily, delete later */
 

@@ -1,13 +1,13 @@
 
 /******************** IMPORTED LEGACY CODE ********************/
 
+
 .drop-shadow{
      -moz-box-shadow: 0px 0px 4px #ccc; /* FF3.5+ */
   -webkit-box-shadow: 0px 0px 4px #ccc; /* Saf3.0+, Chrome */
           box-shadow: 0px 0px 4px #ccc; /* Opera 10.5, IE9, Chrome 10+ */
 behavior: url('http://alrp-new.live.radicaldesigns.org/wp-content/themes/alrp/PIE.htc');
 }
-
 
 
 
@@ -275,9 +275,7 @@ height: auto;
 
 /*  main content */
 #content {
-  width:960px;
   min-height: 400px;
-  float:left;
   background:  url(images/inside-bg.gif) repeat-y #fff;
   position: relative;
 }
@@ -1066,3 +1064,32 @@ width: 200px;
 q:before, q:after {
 	content:"";
 }
+
+@media (max-width: 700px) {
+	.bottom-box {
+		width:100%;
+		float: none;
+		margin: 10px 10px 25px;
+	}
+
+}
+
+@media (max-width: 992px) { 
+
+	.bottom-box {
+		width:100%;
+		float: none;
+		margin: 10px 10px 25px;
+	}
+}
+	
+
+/*
+@media screen and (min-width: 768px) { 
+	.bottom-box {
+		width:720px;float:left;
+		margin: 10px 10px 25px;
+	}
+		
+}
+*/
