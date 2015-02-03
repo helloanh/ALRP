@@ -30,5 +30,8 @@ $base-font-size: 14px;
 /* twitter bootstrap from gem, look in alrp/config.ru file */
 @import "bootstrap";
 
-
+/* Overriding Bootstrap */
+#header-logo.col-xs-4 {
+	padding-left: 0;
+}
 

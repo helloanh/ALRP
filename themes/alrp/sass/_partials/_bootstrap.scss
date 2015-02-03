@@ -39,11 +39,11 @@
 @import "bootstrap/wells";
 @import "bootstrap/close";
 
-// Components w/ JavaScript
-//@import "../../js/javascripts/bootstrap/modals";
-//@import "../../js/javascripts/bootstrap/tooltip";
-//@import "../../js/javascripts/bootstrap/popovers";
-//@import "../../js/javascripts/bootstrap/carousel";
+ Components w/ JavaScript
+@import "../../js/javascripts/bootstrap/modals";
+@import "../../js/javascripts/bootstrap/tooltip";
+@import "../../js/javascripts/bootstrap/popovers";
+@import "../../js/javascripts/bootstrap/carousel";
 
 // Utility classes
 @import "bootstrap/utilities";

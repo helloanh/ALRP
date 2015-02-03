@@ -25,10 +25,6 @@
     	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php wp_head(); ?>
 
-<! -- Twitter Bootstrap CDN -->
-<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-
 <! -- Google Analytics Integration  -->
 <script type="text/javascript">
  
