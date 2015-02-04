@@ -12,4 +12,4 @@ output_style = :nested
 
 require 'bootstrap-sass'
 
-
+sass_options = {:cache_locations => ".sass-cache/"} 
