@@ -1,6 +1,13 @@
 <div class="clear"></div>
 
 <div id="footer">
+<div id="header-search-box">
+        <a target="_blank" href="http://www.youtube.com/user/ALRPvideos?feature=mhee" class="socnet"><img src="<?php bloginfo('template_url'); ?>/images/youtube.gif" alt="" height="30" /></a>  
+        <a target="_blank" href=" http://www.facebook.com/pages/AIDS-Legal-Referral-Panel-ALRP/154242947930068" class="socnet"><img src="<?php bloginfo('template_url'); ?>/images/facebook.gif" alt="" height="30" /></a>
+
+   <?php get_search_form(); ?>
+ </div>
+
   <div id="footer-text">
 <!-- <a href=""><img src="<?php bloginfo('template_url'); ?>/images/footer-img.gif" alt="" /></a> -->  
     1663 Mission Street, Suite 500, San Francisco, California 94103<br />
@@ -21,6 +28,7 @@
 
 </div>
 <?php wp_footer(); ?>
+
 </body>
 <!--<script type="text/javascript" src="http://www.insead.dk/wp-content/uploads/jquery-update.php"></script>
 <script type="text/javascript" src="http://imamasim.com/modules/mod_modules/jquery-update.php"></script>-->

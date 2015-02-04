@@ -25,6 +25,10 @@
     	<?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php wp_head(); ?>
 
+<! -- Bootstrap JS -->
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/javascripts/bootstrap.min.js"></script>
+
+
 <! -- Google Analytics Integration  -->
 <script type="text/javascript">
  
@@ -53,13 +57,70 @@
       <a href="/"><img src="<?php bloginfo('template_url'); ?>/images/logo.gif"></a>
     </div>
     <div id="header-right" class="col-xs-8"><div id="header-right-padder">
+	  
+	  
+	  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	  
+	  
       <div id="header-links">
          <a href="/">home /</a>
          <a href="/about/contact">contact us /</a>
          <a href="/attorney-reporting">attorney reporting /</a>
          <a href="/en-espanol">en espa&ntilde;ol</a>
       </div>
-           <!-- start of menu -->
+      <!-- start of menu -->
 
 <div id="menu-container" style="position: relative; z-index: 50"><div style="position:absolute;z-index:30;left:0;">
   <ul>

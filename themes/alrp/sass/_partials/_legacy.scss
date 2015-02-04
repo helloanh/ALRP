@@ -163,6 +163,8 @@ font-size: 12px;
   position: relative;
   text-align:right;
   margin-right:10px;
+  float: left;
+  padding: 40px 0 40px 165px;
 }
 
 #menu-container a, #menu-container span.top-page_item {
@@ -188,7 +190,6 @@ color: #b52d21;
 	height: 35px;
 	font-weight: 500;
 	width: 680px;
-        
 }
 
 #menu-container *{
@@ -288,7 +289,6 @@ height: auto;
   font-size:12px;
   text-align: left;
   background:  url(images/inside-bg.gif) repeat-y #fff;
-  border-radius: 0 0 10px 10px;
 }
 
 #footer a{text-decoration: underline;color:#444242;font-weight: normal;}
@@ -297,6 +297,7 @@ height: auto;
     background: url("images/footer-img.gif") no-repeat scroll 45px 15px transparent;
     padding: 40px 165px;
     color:#444242;
+    clear: both;
 }
 
 /* --FRONT PAGE SPECIFIC-- */
@@ -1073,30 +1074,30 @@ q:before, q:after {
 		margin: 10px 10px 25px;
 	}
 
-        
-        .bottom-box {
-          padding: 10px 10px 25px;
-          margin: 0;
+        img {
+            
+            margin: 0;
+            padding: 0;
+
+             #footer {
+                      
+               
+             }
         }
 
-        #menu-container {
-          width: auto;
-        }
 
 }
 
 @media (max-width: 992px) { 
 
 	.bottom-box {
-	  width:100%;
-	  float: none;
-	  padding: 10px 10px 25px;
-	  margin: 0;
-        }
-
-        #menu-container {
-          width: auto;
-        }
+		width:100%;
+		float: none;
+		margin: 10px 10px 25px;
+	}
+	.navbar-toggle {
+		display: block;
+	}
 }
 	
 
