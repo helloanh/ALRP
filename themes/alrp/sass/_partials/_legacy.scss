@@ -188,6 +188,7 @@ color: #b52d21;
 	height: 35px;
 	font-weight: 500;
 	width: 680px;
+        
 }
 
 #menu-container *{
@@ -282,12 +283,12 @@ height: auto;
 
 /* footer */
 #footer {
-  width: 960px;
   margin: 0 auto;
   margin-bottom:40;
   font-size:12px;
   text-align: left;
   background:  url(images/inside-bg.gif) repeat-y #fff;
+  border-radius: 0 0 10px 10px;
 }
 
 #footer a{text-decoration: underline;color:#444242;font-weight: normal;}
@@ -1072,15 +1073,30 @@ q:before, q:after {
 		margin: 10px 10px 25px;
 	}
 
+        
+        .bottom-box {
+          padding: 10px 10px 25px;
+          margin: 0;
+        }
+
+        #menu-container {
+          width: auto;
+        }
+
 }
 
 @media (max-width: 992px) { 
 
 	.bottom-box {
-		width:100%;
-		float: none;
-		margin: 10px 10px 25px;
-	}
+	  width:100%;
+	  float: none;
+	  padding: 10px 10px 25px;
+	  margin: 0;
+        }
+
+        #menu-container {
+          width: auto;
+        }
 }
 	
 
