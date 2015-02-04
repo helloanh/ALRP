@@ -15,7 +15,6 @@
   </div>
   <div class="clear"></div>
 </div>
-<div><img src="<?php bloginfo('template_url'); ?>/images/footer.gif" alt="" /></div>
 <br /><br /><br />
 <!-- end of page -->
 </div>
