@@ -59,13 +59,7 @@
          <a href="/attorney-reporting">attorney reporting /</a>
          <a href="/en-espanol">en espa&ntilde;ol</a>
       </div>
-      <div id="header-search-box">
-        <a target="_blank" href="http://www.youtube.com/user/ALRPvideos?feature=mhee" class="socnet"><img src="<?php bloginfo('template_url'); ?>/images/youtube.gif" alt="" height="30" /></a>  
-        <a target="_blank" href=" http://www.facebook.com/pages/AIDS-Legal-Referral-Panel-ALRP/154242947930068" class="socnet"><img src="<?php bloginfo('template_url'); ?>/images/facebook.gif" alt="" height="30" /></a>
-
-        <?php get_search_form(); ?>
-      </div>
-      <!-- start of menu -->
+           <!-- start of menu -->
 
 <div id="menu-container" style="position: relative; z-index: 50"><div style="position:absolute;z-index:30;left:0;">
   <ul>
