@@ -32,8 +32,33 @@ $base-font-size: 14px;
 
 /* Overriding Bootstrap */
 #header-logo.col-xs-4 {
-	padding-left: 0;
+    padding-left: 0;
 }
 
-/* Overriding fonts temporarily, delete later */
+
+#header-links {
+    
+    padding-bottom: 50px;
+
+    .navbar-nav {
+        float:right;
+    }
+}
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #C93320;
+    width: 40px;
+    height: 5px;
+    padding: 2.5px;
+
+}
+
 

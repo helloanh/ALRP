@@ -8267,19 +8267,22 @@ q:before, q:after {
     margin: 10px 10px 25px; }
 
   /* line 1077, sass/_partials/_legacy.scss */
-  img {
-    margin: 0;
-    padding: 0; } }
+  .icon-bar {
+    background-color: #C93320; } }
 @media (max-width: 992px) {
-  /* line 1093, sass/_partials/_legacy.scss */
+  /* line 1084, sass/_partials/_legacy.scss */
   .bottom-box {
     width: 100%;
     float: none;
     margin: 10px 10px 25px; }
 
-  /* line 1098, sass/_partials/_legacy.scss */
+  /* line 1089, sass/_partials/_legacy.scss */
   .navbar-toggle {
-    display: block; } }
+    display: block; }
+
+  /* line 1093, sass/_partials/_legacy.scss */
+  .icon-bar {
+    background-color: #C93320; } }
 /*
 @media screen and (min-width: 768px) { 
 	.bottom-box {
@@ -8294,4 +8297,25 @@ q:before, q:after {
 #header-logo.col-xs-4 {
   padding-left: 0; }
 
-/* Overriding fonts temporarily, delete later */
+/* line 39, sass/style.scss */
+#header-links {
+  padding-bottom: 50px; }
+  /* line 43, sass/style.scss */
+  #header-links .navbar-nav {
+    float: right; }
+
+/* line 47, sass/style.scss */
+.navbar-default .navbar-toggle {
+  border-color: white; }
+
+/* line 51, sass/style.scss */
+.navbar-default {
+  background-color: white;
+  border-color: white; }
+
+/* line 56, sass/style.scss */
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #C93320;
+  width: 40px;
+  height: 5px;
+  padding: 2.5px; }
