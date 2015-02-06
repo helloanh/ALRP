@@ -69,102 +69,70 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
+	  <div id="header-links">   
+	      <ul class="nav navbar-nav">
+	         <li><a href="/">home /</a></li>
+		   	 <li><a href="/about/contact">contact us /</a></li>
+		   	 <li><a href="/attorney-reporting">attorney reporting /</a></li>
+		   	 <li><a href="/en-espanol">en espa&ntilde;ol</a></li>
+	      </ul>
+      </div>
+      <div id="menu-container" style="position: relative; z-index: 50"><div style="position:absolute;z-index:30;left:0;">
+	      <ul class="nav navbar-nav navbar-right">
+	        <?php
+			  foreach (array(2,4,6,8,10,14) as $x) {
+			    if (is_page($x)) { 
+			      $class = 'page_item page-item-'.$x.' current_page_item'; 
+			    } else{
+			      $class = 'page_item page-item-'.$x; 
+			    }
+			    if ($x != 10 ){
+			      echo '<li class="'.$class.'"><a href="'.get_permalink($x).'">'. get_the_title($x).'</a>';
+			      display_menu($x);
+			    } else{
+			    echo '<li class="'.$class.'"><a href="/category/news">news & events</a>'; //'. get_the_title($x).'</a>';
+			      echo '<ul class="children">
+			              <li class="page_item page-item-562">
+			                <a title="news" href="/category/news">news</a>
+			              </li>
+			              <li class="page_item page-item-562">
+			                <a title="events" href="/events">upcoming events</a>
+			              </li>
+			              <li class="page_item page-item-562">
+			                <a title="calendar" href="/events/calendar">event calendar</a>
+			              </li>
+			              <li class="page_item page-item-832">
+			                <a title="free MCLE trainings" href="/events/free-mcle-trainings">free MCLE trainings</a>
+			              </li>
+			              <li>
+			                <a href="http://www.alrp.org/newsletters">newsletters</a>
+			              </li>
+			              <li>
+			                <a href="http://www.alrp.org/category/spotlight">spotlight</a>
+			              </li>
+			              <li>
+			                <a href="http://www.alrp.org/category/gallery">photo gallery</a>
+			              </li>
+			            </ul>';
+			    }
+			    echo '</li>';
+			    
+			  }
+			  ?>
+	      </ul>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 	  
-	  
-      <div id="header-links">
-         <a href="/">home /</a>
-         <a href="/about/contact">contact us /</a>
-         <a href="/attorney-reporting">attorney reporting /</a>
-         <a href="/en-espanol">en espa&ntilde;ol</a>
-      </div>
       <!-- start of menu -->
 
 <div id="menu-container" style="position: relative; z-index: 50"><div style="position:absolute;z-index:30;left:0;">
-  <ul>
-  <?php
-  foreach (array(2,4,6,8,10,14) as $x) {
-    if (is_page($x)) { 
-      $class = 'page_item page-item-'.$x.' current_page_item'; 
-    } else{
-      $class = 'page_item page-item-'.$x; 
-    }
-    if ($x != 10 ){
-      echo '<li class="'.$class.'"><a href="'.get_permalink($x).'">'. get_the_title($x).'</a>';
-      display_menu($x);
-    } else{
-    echo '<li class="'.$class.'"><a href="/category/news">news & events</a>'; //'. get_the_title($x).'</a>';
-      echo '<ul class="children">
-              <li class="page_item page-item-562">
-                <a title="news" href="/category/news">news</a>
-              </li>
-              <li class="page_item page-item-562">
-                <a title="events" href="/events">upcoming events</a>
-              </li>
-              <li class="page_item page-item-562">
-                <a title="calendar" href="/events/calendar">event calendar</a>
-              </li>
-              <li class="page_item page-item-832">
-                <a title="free MCLE trainings" href="/events/free-mcle-trainings">free MCLE trainings</a>
-              </li>
-              <li>
-                <a href="http://www.alrp.org/newsletters">newsletters</a>
-              </li>
-              <li>
-                <a href="http://www.alrp.org/category/spotlight">spotlight</a>
-              </li>
-              <li>
-                <a href="http://www.alrp.org/category/gallery">photo gallery</a>
-              </li>
-            </ul>';
-    }
-    echo '</li>';
-    
-  }
-  ?>
-  </ul>
+  
 </div></div>
     </div></div>
     <div class="clear"></div>
