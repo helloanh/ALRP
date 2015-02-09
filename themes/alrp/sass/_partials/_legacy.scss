@@ -125,9 +125,7 @@ clear: both;
   background:  url(images/inside-bg.gif) repeat-y #fff;  
 }
 
-#header-top {
 
-}
 
 #header-padder {
   padding-top:40px;
@@ -149,7 +147,8 @@ padding: 40px 20px 0 0;
 #header-links {
   height: 30px;
   text-align:right;  
-    margin-right:10px;
+  margin-right:10px;
+
 }
 
 #header-links a{
@@ -289,6 +288,7 @@ height: auto;
   font-size:12px;
   text-align: left;
   background:  url(images/inside-bg.gif) repeat-y #fff;
+  border-radius: 0px 0px 10px 10px;
 }
 
 #footer a{text-decoration: underline;color:#444242;font-weight: normal;}
@@ -460,21 +460,21 @@ margin-top: 15px;
 
 /* -- INSIDE PAGE **/
 #inner {
-float:left;
-text-align: left;
-width:960px;
-position: relative;
-margin-top: 20px;
+  float:left;
+  text-align: left;
+  width:960px;
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  border-left: 7px solid #bc2e22;
 }
 
 #inner-left {
-float:left;
-width: 608px;
-margin-left: 45px;
+  float:left;
+  width: 608px;
+  margin-left: 45px;
 }
 
-#inner-left table{
-}
 
 #inner .padder-20{
 padding: 40px 20px 20px;
@@ -1068,7 +1068,12 @@ q:before, q:after {
 }
 
 @media (max-width: 700px) {
-	.bottom-box {
+        #header-links {
+            a { background-color:#bc2e22; }
+            li { display:none;}
+        }
+  
+        .bottom-box {
 		width:100%;
 		float: none;
 		margin: 10px 10px 25px;
@@ -1077,10 +1082,20 @@ q:before, q:after {
         .icon-bar {
                 background-color: #C93320;
         }
+
+        .navbar-collapse.in {
+          max-height: none;
+          overflow-x: auto;
+        }
 }
 
-@media (max-width: 992px) { 
-
+@media (max-width: 960px) { 
+       
+        #header-links {
+            a { background-color:#bc2e22; }
+            li { display:none;}        
+        }
+        
 	.bottom-box {
 		width:100%;
 		float: none;
@@ -1093,15 +1108,17 @@ q:before, q:after {
         .icon-bar {
                 background-color: #C93320;
         }
+
+
+        .navbar-collapse.in {
+          max-height: none;
+          overflow-x: auto;
+        }
+
+
 }
+
+        
+        
 	
 
-/*
-@media screen and (min-width: 768px) { 
-	.bottom-box {
-		width:720px;float:left;
-		margin: 10px 10px 25px;
-	}
-		
-}
-*/

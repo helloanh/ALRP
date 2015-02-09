@@ -61,4 +61,9 @@ $base-font-size: 14px;
 
 }
 
+.navbar-collapse.in {
+    max-height: none;
+    overflow-x: none;
+}
+
 
